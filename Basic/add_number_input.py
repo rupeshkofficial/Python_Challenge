@@ -1,8 +1,9 @@
-x = int(input("Enter Your First Number:"))
-y = int(input("Enter Your Second Number:"))
-z = int(input("Enter Your Third Number:"))
-p = int(input("Enter Your Fourth Number:"))
+num1 = int(input("Enter Your First Number:"))
+num2 = int(input("Enter Your Second Number:"))
+num3 = int(input("Enter Your Third Number:"))
+num4 = int(input("Enter Your Fourth Number:"))
+num5 = int(input("Enter Your Fourth Number:"))
 
-s = x + y + z + p
+num6 = num1 + num2 + num3 + num4 + num5
 
-print(f"Addition of {x},{y},{z} and {p} is: {s}")
+print(f"Addition of 5 Number {num1},{num2},{num3},{num4} and {num5} is: {num6}")

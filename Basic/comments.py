@@ -24,8 +24,6 @@ Jai ho
 jai ho
 jai ho
 
-
-
 """
 
 

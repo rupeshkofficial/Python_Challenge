@@ -21,26 +21,27 @@ Note:
 
 2. Exponential ( ** ) --> Power --> Ex: 5**3 = 125
 
-3. Division ( % ) --> Output always in float ---> Ex: 10 % 4 = 2.5, 10 % 10 = 1.0
+3. Division ( / ) --> Output always in float ---> Ex: 10 / 4 = 2.5, 10 / 10 = 1.0
 
 4. Floor Division ( // ) --> Output always in integer ( That is always gives lower integer) 
                        
-                         Ex: 10 % 4 = 2.5 but we do 10 // 4 (floor division) then we have to take lower integer then it's output will be 2.
-                            13 % 7 = 1.8571 but we do 13 // 7 (floor division) then we have to take lower integer then it's output will be 1.
-                             
-                                        
+                         Ex: 10 / 4 = 2.5 but when we do 10 // 4 (floor division) then we have to take lower integer (Never do roundoff) then it's output will be 2.
+                             13 / 7 = 1.8571 but when we do 13 // 7 (floor division) then we have to take lower integer (Never do roundoff) then it's output will be 1.
+                             - 10 / 4 = -2.5 but but when we do -10 // 4 (floor division) then we have to take lower integer (Never do roundoff) then it's output will be -3.
+                                         As lower integer of -2.5 will be -3.
+
 
 ''' 
 
 a = 40
 b = 4
 
-print(a+b)
-print(a-b)
-print(a/b) 
-print(a*b)
+print(a+b) # 44
+print(a-b) # 40
+print(a/b) # 10.0 ( Always Float)
+print(a*b) # 160
 
-print(a**b)
-print(a%b) # % ---> Gives remainder
+print(a**b) # 2560000
+print(a%b) # 0 ( Gives Remainder)
 
-print(a//b) # // --> Floor divison (Return always integer)
+print(a//b) # 10 ( Floor Division always return integer value)

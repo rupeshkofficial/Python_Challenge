@@ -4,7 +4,7 @@ num2 = int(input("How many classes you attended: "))
 attendacne_per = (num2 / num1 ) * 100
 
 print(f"Your attendance percentage is {attendacne_per}") # Your attendance percentage is 16.666666666666664
-print(f"Your attendance percentage is {attendacne_per: .2f}") # To roundoff the percentage upto 2 decimal like 16.67
+print(f"Your attendance percentage is {attendacne_per: .4f}") # To roundoff the percentage upto 2 decimal like 16.67, here .2f means 2 digit tak round off if .4f then 4 digit tak round off that is 16.6667.
 
 if attendacne_per > 75:
     print(f"Great! You are allowed to seat in exam as your attendacne percentage is {attendacne_per}")

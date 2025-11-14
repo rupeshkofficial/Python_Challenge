@@ -1,0 +1,10 @@
+Syntax:
+
+if condition True it will print the statment below while loop and again check condition and if again True then print again statment below while loop. It will stop print statment 
+below while loop when condition is False.
+
+
+while condition:
+    ------
+    ------
+    ------

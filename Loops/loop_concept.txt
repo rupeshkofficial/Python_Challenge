@@ -1,3 +1,3 @@
 Loops ---> Looping means repeating something over and over until a particular condition is satisfied.
 
-Main two loops --> while loop and for loop
+Mainly two loops --> while loop and for loop

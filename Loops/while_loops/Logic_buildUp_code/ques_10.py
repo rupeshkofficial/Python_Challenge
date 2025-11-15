@@ -2,3 +2,17 @@
 
 x = int(input("Enter 1st Number: "))
 y = int(input("Enter 2nd Number: "))
+
+if x < y:
+    i = x
+    while i <= y:
+        print(i, end = " ")
+        i = i + 1
+else:
+    i = y
+    while i <= x:
+        print(i, end = " ")
+        i = i + 1
+
+  
+

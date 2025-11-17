@@ -3,7 +3,9 @@ Syntax:
 if condition True it will print the statment below while loop and again check condition and if again True then print again statment below while loop. It will stop print statment 
 below while loop when condition is False.
 
-
+1. start ( i = 2)
+2. end (i <= 2)
+3. How to go ( i = i + 1)
 while condition:
     ------
     ------

@@ -8,7 +8,14 @@ for i in range(1,11):
 
 '''
 
+''''
 for i in range(1,11):
     print("Done")
     print(i)
     print("BYE")
+
+'''
+# It will start from 0 by default if start no is not given
+for i in range(10):
+    print(i,end = " ")
+

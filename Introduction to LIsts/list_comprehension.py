@@ -15,3 +15,6 @@ print(my_list) # O/P: ['EVEN', 'ODD', 'EVEN', 'ODD', 'EVEN', 'ODD', 'EVEN', 'ODD
 # [2,4,6,8,10,...........26,28,30]
 my_list = [ i for i in range(1,31) if i % 2 == 0]
 print(my_list) # O/P: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]
+
+my_list = [ i for i in range(1,31) if i % 5 == 0]
+print(my_list) # O/P: [5, 10, 15, 20, 25, 30]

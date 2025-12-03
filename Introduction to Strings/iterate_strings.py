@@ -1,4 +1,4 @@
-my_string = "Rupesh Tech"
+my_string = "Rupesh Tech Youtube Channel"
 
 # By Index 
 for index in range(0,len(my_string)):

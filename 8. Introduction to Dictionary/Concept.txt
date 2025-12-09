@@ -1,0 +1,8 @@
+Key Value Pair
+
+Example:
+
+Word -----------> Meaning
+(Unique)          (Repeat)
+
+{key:value}

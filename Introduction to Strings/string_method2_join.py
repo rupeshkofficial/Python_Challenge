@@ -36,7 +36,7 @@ my_list = ["abc", "xyz", "hello", "Rupesh", 74]
 
 my_string1 = " ".join(str(i) for i in my_list)
 
-my_string2 = " ".join(str(i) [::-1]for i in my_list)
+my_string2 = " ".join(str(i) [::-1]for i in my_list) # Har ek word ulta jud jayega
 
 print(my_string1) # abc xyz hello Rupesh 74
 

@@ -1,0 +1,3 @@
+Sets ----> To store unique values
+           Unordered & Mutable
+           It doesn't have index or position

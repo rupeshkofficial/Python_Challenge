@@ -9,7 +9,7 @@ print(type(x))   # <class 'dict'>
 z = {"name": "Rupesh","age": 23, "gender": "Male", "name":"Priya"}
 print(z) # {'name': 'Priya', 'age': 23, 'gender': 'Male'}
 
-# ---------- Key will be any data type not only strinbg. It may be strinbg,float,integer
+# ---------- Key will be any data type not only strinbg. It may be string,float,integer
 
 t = {"name": "Rupesh","age": 23, "gender": "Male", "name":"Priya", 1: 23}
 print(t) # {'name': 'Priya', 'age': 23, 'gender': 'Male', 1: 23}

@@ -1,6 +1,6 @@
 # Read Mode --> To read content of the file
 
-f = open("/Users/rupeshk/Desktop/Coding/Python_Challenge/12_File Handling/hello.txt", "r") # With Proper path of file
+f = open("/Users/rupeshk/Desktop/Coding/Python_Challenge/12_File Handling/Read_Mode/hello.txt", "r") # With Proper path of file
 #f = open("hello.txt","r") # If file is in same folder then no need to give path. Just give file name
 
 # x = f.read() # It will read all the content of file and save it to x

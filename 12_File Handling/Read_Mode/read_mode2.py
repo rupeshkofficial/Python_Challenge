@@ -1,4 +1,4 @@
-with open("/Users/rupeshk/Desktop/Coding/Python_Challenge/12_File Handling/hello.txt", "r") as f:
+with open("/Users/rupeshk/Desktop/Coding/Python_Challenge/12_File Handling/Read_Mode/hello.txt", "r") as f:
 
     print(f) # <_io.TextIOWrapper name='/Users/rupeshk/Desktop/Coding/Python_Challenge/12_File Handling/hello.txt' mode='r' encoding='UTF-8'>
 

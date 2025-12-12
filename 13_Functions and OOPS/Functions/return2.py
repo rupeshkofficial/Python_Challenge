@@ -12,4 +12,5 @@ x = int(input("Enter number 1 = "))
 y = int(input("Enter number 2 = "))
 
 s = add(x,y)
+print(f"Total = {s}")
 print(check(s))

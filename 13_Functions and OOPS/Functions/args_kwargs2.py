@@ -19,19 +19,21 @@ def add(*args, **kwargs):
     # print(kwargs)
     for k, v in kwargs.items():
         print(k, v)
+
+
 add(name="Raja", age=10, gender="male")
 
 # 2
 # Here: n1,n2 kr baad jitne sara parameters honge o args me jayenge.
 
-def add(n1,n2,*args, **kwargs):
-    print(f"{n1 = }") # n1 = 10
-    print(f"{n2 = }") # n2 = 15 
-    print(f"{args = }") #  args = (20, 200, 34, 5, 6)
-    print(f"{kwargs = }") # kwargs = {'name': 'Raja'}
 
-add(10,15,20,200,34,5,6, name = "Raja")
- 
+def add(n1, n2, *args, **kwargs):
+    print(f"{n1 = }")  # n1 = 10
+    print(f"{n2 = }")  # n2 = 15
+    print(f"{args = }")  #  args = (20, 200, 34, 5, 6)
+    print(f"{kwargs = }")  # kwargs = {'name': 'Raja'}
+    print(kwargs["name"])  # Raja
+    print(f"{kwargs["name"] = } ") # kwargs["name"] = 'Raja' 
 
 
-
+add(10, 15, 20, 200, 34, 5, 6, name="Raja")

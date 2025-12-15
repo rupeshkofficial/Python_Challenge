@@ -1,5 +1,5 @@
 class Student:
-    def __init__(self):
+    def __init__(self): # Initializer
         self.name = input("Enter Your Name = ")
         self.age = int(input("Enter Your Age = "))
         self.gender = input("Enter Your Gender = ")

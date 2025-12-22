@@ -10,8 +10,10 @@ def triangle(base: float, height:float) -> None:
     area = 0.5 * height * base
     print(f"Area of triangle = {area}")
 
-circle(56.996)
-rectangle(24,41)
+print(__name__)
+if __name__ == "__main__":
+    circle(43.55)
+    triangle(100,55)
 
 
     

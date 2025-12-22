@@ -58,11 +58,23 @@ class Bank:
 
 
 banks = []
+
+def check_account_exists(acc_no: int):
+    global banks
+    for obj in banks:
+        if obj.account == acc_no:
+            return obj
+    return None
+
+
+
 while True:
     print("1. Create Account")
     print("2. Show All Bank Details")
     print("3. Deposit amount")
-    print("4. Exit")
+    print("4. Withdraw amount")
+    print("5. Transfer amount")
+    print("6. Exit")
     choice = int(input("Enter choice = "))
     if choice == 1:
         obj = Bank()
@@ -83,8 +95,36 @@ while True:
                 if obj.account == acc_no:
                     obj.deposit()
                     break
+    elif choice == 4: 
+        if len(banks) == 0:
+            print("No accounts have been created yet")
+        else:
+            acc_no = int(input("Enter account number to withdraw = "))
+            for obj in banks:
+                if obj.account == acc_no:
+                    obj.withdraw()
+                    break
+    elif choice == 5:
+        from_acc_no = int(input("Enter account number from which you want to transfer = "))
+        to_acc_no = int(input("Enter account number to which you want to transfer = "))
+        
+        to_acc_no = int(input("Enter account number to which you want to transfer = "))
+        from_acc_obj = check_account_exists(from_acc_no) 
+        to_acc_obj = check_account_exists(to_acc_no)
+        if from_acc_obj != None and to_acc_no != None:
+            transfer_amount = int(input("Enter transfer amount = "))
+            if from_acc_obj.balance < transfer_amount:
+                print("Insufficient balance")
+            else:
+                from_acc_obj.balance -= transfer_amount
+                to_acc_obj.balance += transfer_amount
+            
+        else:
+            print("Account does not exists")
 
-    elif choice == 4:
+
+
+    elif choice == 6:
         break
     else:
         print("Invalid Choice")

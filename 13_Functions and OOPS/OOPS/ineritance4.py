@@ -1,6 +1,6 @@
 class Car:
-    def set_info(self):
-        self.color = input("Enetr car color = ")
+    def __init__(self) -> None:
+        self.color = input("Enter car color = ")
         self.type = input("Enter type = ")
         self.mileage = float(input("Enter mileage = "))
         self.seat_capacity = int(input("Enter seat capacity = "))
@@ -13,8 +13,8 @@ class Car:
 
 
 class Audi(Car):
-    def set_audi_info(self):
-        self.set_info()
+    def __init__(self):
+        super().__init__()
         self.electric = input("Enter electric = ")
         self.city = input("Enter city = ")
 
@@ -27,7 +27,5 @@ class Audi(Car):
         self.audi_info()
         
 c1 = Audi()
-c1.set_audi_info()
-# c1.base_info()
-# c1.audi_info()
+print("----------------------")
 c1.show_full_info()

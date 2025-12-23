@@ -1,0 +1,30 @@
+# Encapsulation Means data hiding
+
+# Access Modifiers --> Public, Protected, Private
+
+from random import randint
+
+class Bank:
+    def __init__(self) -> None:
+        self.name = input("Enter name = ")
+        self.__account_no = randint(10000,999999) # Here account_no is private
+        self.__balance = 0
+    
+    def displayBalance(self): # getter
+        print(self.__balance)
+
+    def setBalance(self,newAmount): # setter
+        self.__balance = newAmount
+
+    def display(self):
+        print(f"Account number = {self.__account_no}")
+        print(f"Name = {self.name}")
+        print(f"Balance = {self.__balance}")
+
+obj = Bank()
+obj.display()
+print("-----------")
+obj.setBalance(1000)
+obj.displayBalance()
+
+

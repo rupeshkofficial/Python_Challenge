@@ -1,8 +1,9 @@
-num = int(input("Enter any number: "))
+import math
 
-count = 0
-while num > 0:
-    count = count + 1
-    num = num // 10
-print(count)
+def countDigit(n: int) -> int:
+    if n == 0:
+        return 1
+    n = abs(n)
+    return int(math.log10(n)) + 1
     
+print(countDigit(12345))
